@@ -3,7 +3,7 @@ JavaScript (JS) is a lightweight, cross-platform programming language used to ad
 With JavaScript, you can:
 Respond to button clicks
 Validate forms
-Update web pages without reloading
+Update web pages without reloading  
 Create animations and games
 Build web servers and mobile apps
 
@@ -90,7 +90,35 @@ let new_months=months.with(1,"feb")
 console.log(new_months)
 
 
+-------------------------------
+  // function myfunc()
+// {
+//     console.log("hi")
+//     console.log("hello")
+// }
+// myfunc()
 
+// function sum(x,y){
+//     s=x+y
+//     return s
+// }
+// let val=sum(6,9)
+// console.log(val)
+
+
+// function val(x){
+//     console.log("before")
+//     return x
+//     console.log("after")
+// }
+// let v=val(7)
+// console.log(v)
+
+
+const arrowSum=(a,b)=>{
+    console.log(a+b)
+}
+arrowSum(3,4)
 
 
 
