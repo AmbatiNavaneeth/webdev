@@ -157,22 +157,38 @@
 // console.log(vowelcount(s))
 
 
-//for each loop 
+//for each loop (onlt used for arrray not t0 srings)
 // let arr=[1,4,7,0]
 // arr.forEach(function printval(val){
 //     console.log(val)
 // })
 
+
 // let cities=['hyd','goa','kerala','odisha']
 // cities.forEach((val,idx)=>{
-//     console.log(val.toUpperCase(),idx)
-// })   //o/p:- hyd 0 goa 1 kerala 2 odisha 3
+//     console.log(val.toUpperCase(),idx,cities)
+// })   //o/p:- hyd 0 cities goa 1 cities kerala 2 cities odisha 3 cities
 
 
+//printiong square of each number
+// let values=[1,2,3,4,5]
+// values.forEach((val)=>{
+//     console.log(val*val)
+// })
 
 
+//sum of numbers in a list
+// let val=[1,2,3,4]
+// const output=val.reduce(res,curr)=>{
+//     return res+curr}
+// console.log(output)
 
 
+//greatest number in a list
+// let val=[1,2,3,4]
+// const output=val.reduce((prev,curr)=>{
+//     return prev>curr ? prev:curr})
+// console.log(output)
 
 
 
