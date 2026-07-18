@@ -191,10 +191,38 @@
 // console.log(output)
 
 
+let val=[1,2,3,4]
+const output=val.reduce((prev,curr)=>{
+    return prev<curr ? prev:curr})
+console.log(output)
 
 
+// let marks=[67,94,99,56,20]
+// // let new_marks=marks.filter(marks=>marks>90)
+// let topper=marks.filter((val)=>{
+//     return val>90
+// })
+// console.log(topper)
 
+//adding elements to a list 
+let num=prompt("ENTER S NUMBER")
+let new_num=[]
+for (let i=1;i<=num;i++){
+    new_num.push(i)
+}
+console.log(new_num)
 
+//sum of elements
+let ans1=new_num.reduce((res,curr)=>{
+    return res+curr
+})
+console.log(ans1)
+
+//multiplication of all elements
+let ans2=new_num.reduce((res,curr)=>{
+    return res*curr
+})
+console.log(ans2)
 
 
 
