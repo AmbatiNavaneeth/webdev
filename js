@@ -224,8 +224,89 @@
 // })
 // console.log(ans2)
 
+-----------------------------------------------
+DOM-DOCUMENT OBJECT MODEL
+
+-getElementById
+let head = document.getElementById("heading");
+console.dir(head);
+
+-getElementsByClassName
+let header = document.getElementsByClassName("head");
+console.dir(header);
+
+-getElementsByTagName
+let para=document.getElementsByTagName("p");
+console.dir(para);
+
+-querySelector
+let q=document.querySelector("p")
+console.dir(q)
+
+let qq=document.querySelector(".head")
+console.dir(qq)
+
+-querySelectorAll
+let qqq=document.querySelectorAll(".head")
+console.dir(qqq)
+
+let query=document.querySelectorAll("p")
+console.dir(query)
+
+//creating div then performing operations on it
+let div=document.querySelector("div")
+console.dir(div)
+
+//q)create h2 heading with any text and append another with it then display itin console
+let h6=document.querySelector("h6")
+console.dir(h6.innerHTML)
+h6.innerText=h6.innerText+"..........."
 
 
+q)create 3 divs access ekements and add some unique text to each of them and display in console
+let divs=document.querySelectorAll(".myDiv")
+let idx=1
+for (d of divs){
+    d.innerText=`new text ${idx}`
+    console.log(d.innerText)
+    idx++
+}
+divs[0].innerText=divs[0].innerText+" hiii"
+divs[1].innerText=divs[1].innerText+" hello"
+divs[2].innerText=divs[2].innerText+"world"
+
+for(let i=0;i<divs.length;i++){
+    divs[i].innerText="Unique text for Div "+(i+1);
+    console.dir(divs[i].innerText)
+}
+
+
+attributes
+-get attribute
+let d=document.querySelector("div")
+console.log(d.getAttribute('id')) 
+
+let id=div.getAttribute('id')
+console.log(id)
+
+let p=document.querySelector("p")
+console.log(p)
+
+let pclass=p.getAttribute('class')
+console.log(pclass)
+
+-set attribute
+let d=document.querySelector("div")
+console.log(d.setAttribute("class","new_class"))
+
+let p=document.querySelector("p")
+console.log(p.getAttribute("id"))
+
+--node.style
+p.style.background="red"
+p.style.color="yellow"
+p.innerText="Hiiiii Javascript"
+p.style.visibility='hidden'
 
 
 
