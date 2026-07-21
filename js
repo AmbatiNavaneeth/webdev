@@ -791,6 +791,71 @@ console.log(q2.setAttribute('class','newcls'))
 
 
 ------------EVENTS ---------------------------------------------------------------------------
+//events
+let btn=document.querySelector('button');
+
+btn.onclick=() =>{
+    console.log("btn clicked");
+    let a=25;
+    a++;
+    console.log(a);
+}
+
+
+let d=document.querySelector('div')
+d.onmouseover=()=>{
+    console.log("yor are inside div")
+}
+
+add
+let btn=document.querySelector('button')
+// btn.onclick=(e)=>{
+//     console.log(e)
+//     console.log(e.type)
+//     console.log(e.target)
+//     console.log(e.clickX,e.clickY)
+// }
+
+btn.addEventListener('click',(evt)=>{
+    console.log("First Button was clicked")
+    // console.log(evt)
+    // console.log(evt.type)
+})
+
+
+btn.addEventListener('click',(evt)=>{
+    console.log("second button clicked")})
+
+let handler3=('click',(evt)=>{
+console.log("third button clicked")})
+
+btn.addEventListener('click',(evt)=>{
+console.log("fourth button clicked")})
+
+//remove
+btn.removeEventListener('click',(evt)=>{
+console.log("fourth button clicked")})
+
+
+btn.removeEventListener('click',handler3)
+
+
+let tb=document.querySelector('#toggle')
+let currmode="light"
+
+tb.addEventListener("click",()=>{
+    if (currmode==="light"){
+        currmode="dark"
+        document.querySelector('body').style.backgroundColor="black"
+    }
+    else{
+        currmode="light"
+        document.querySelector('body').style.backgroundColor="white"
+
+        }
+console.log(currmode)
+    }
+)
 
 
 
