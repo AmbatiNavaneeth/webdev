@@ -1,46 +1,62 @@
-// let n=8
-// let c=0
-// for (let i=2;i<5;i++){
-//     if (n%i==0){
-//         c++
-//     }
-// }
-// if(c>1){
-//     console.log(false)
-// }
-// else{
-//     console.log(true)
-// }
-
-// function primenum(n){
-//     if (n<=2){
-//         return false
-//     }
-//     for (let i=2;i<n;i++){
-//         if (n%i==0){
-//             return false
-//         }
-//     else{
-//         return true
-//         }
-//     }
-// }
-
-// n=1
-// console.log(primenum(n))
+let day=7
+switch (day){
+    case 1:
+        console.log("Monday")
+        break
+    case 2:
+        console.log("wednesday")
+        break
+    case 3:
+        console.log("tuesday")
+        break
+    default:
+    console.log("Fuck you")
+    }
 
 
-// function *gen(){
-//     yield '1'
-//     yield '2'
-//     yield '3'
-//     return 'all steps finished'
-// }
-// let process=gen()
-// console.log(process.next())
-// console.log(process.next())
-// console.log(process.next())
-// console.log(process.next())
+let n=8
+let c=0
+for (let i=2;i<5;i++){
+    if (n%i==0){
+        c++
+    }
+}
+if(c>1){
+    console.log(false)
+}
+else{
+    console.log(true)
+}
+
+function primenum(n){
+    if (n<=2){
+        return false
+    }
+    for (let i=2;i<n;i++){
+        if (n%i==0){
+            return false
+        }
+    else{
+        return true
+        }
+    }
+}
+
+n=1
+console.log(primenum(n))
+
+
+function *gen(){
+    yield '1'
+    yield '2'
+    yield '3'
+    return 'all steps finished'
+}
+let process=gen()
+console.log(process.next())
+console.log(process.next())
+console.log(process.next())
+console.log(process.next())
 
 
 let nums=[1,2,3,4]
