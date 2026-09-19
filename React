@@ -1,0 +1,188 @@
+---------------------------------------------------
+creating a componenet
+function Welcome(){
+  return(
+    <h2>Welcome!</h2>
+  )
+}
+function Button(){
+  return (
+   <button>click here</button>
+  )
+}
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+      <h1>Hello Everyone</h1>
+      <Welcome/>
+      <Button/>
+    </div>
+    
+  )
+
+}
+
+export default App
+-------------------------------------------------------------------------------------------------------------
+componenets creating using export and import which is best solution for messy components in app.jsx all
+
+app.jsx
+
+import Welcome from "./Welcome"             <----------
+import Button from "./Button"
+import { useState } from 'react'
+import heroImg from './assets/hero.png'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+  return (
+    <div>
+      <h1>Hello Everyone</h1>
+      <Welcome/>
+      <Button/>
+    </div>
+  )
+}
+export default App
+
+
+Welcome.jsx
+
+function Welcome(){
+  return(
+    <h2>Welcome!</h2>
+  )
+}
+export default Welcome;
+
+Button.jsx
+
+function Button(){
+  return (
+   <button>click here</button>
+  )
+}
+export default Button;
+-------------------------------------------------------------------------------------------------------------
+using ARROW FUNCTIONS it is the best preference 
+
+export const Welcome = () =>{
+  return <h2>Welcome!</h2>;
+  
+}
+
+import {Welcome} from "./Welcome"
+
+-------------------------------------------------------------------------------------------------------------
+JSX-Javascript Xml
+It is a syntax extension for JavaScript primarily used in React to describe what the user interface (UI) should look like.
+It allows developers to write HTML-like structures directly inside JavaScript files.
+
+How it Works
+Browsers cannot read JSX directly. Under the hood, a tool like Babel compiles the JSX code down into regular JavaScript function calls (React.createElement()), which then generate the objects that build the webpage
+
+-------------------------------------------------------------------------------------------------------------
+JSX rules
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
