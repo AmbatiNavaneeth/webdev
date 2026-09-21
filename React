@@ -90,7 +90,79 @@ Browsers cannot read JSX directly. Under the hood, a tool like Babel compiles th
 -------------------------------------------------------------------------------------------------------------
 JSX rules
 -------------------------------------------------------------------------------------------------------------
+props list
 
+export const Products =() => {
+    return (
+    <div>
+
+        <h1>Our products</h1>
+        <div>
+            <h2>Laptop</h2>
+            <p>599999</p>
+        </div>
+         <div>
+            <h2>Mobile</h2>
+            <p>799999</p>
+        </div>
+        
+    </div>
+    )
+}
+
+it will be difficult if we need to add multiple items 
+
+export const Products =() => {
+    const products=[
+        {
+            id:1,
+            name:laptop,
+            price:5999
+        },
+         {
+            id:1,
+            name:laptop,
+            price:5999
+        },
+         {
+            id:1,
+            name:laptop,
+            price:5999
+        },
+         {
+            id:1,
+            name:laptop,
+            price:5999
+        }
+    ]
+
+return(
+    <div>
+        <h2>our products</h2>
+        {products.map((product) => {
+            return (
+                <div>
+                    <h3>{products.name}</h3>
+                    <p>price: {products.price}</p>
+                </div>
+            )
+
+        })}
+    </div>
+)
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+using indexes as keys 
+export const IndexKey =()=>{
+    const names=["diana","clark","bruce"]
+    const nameList = names.map((names,index)=><h1 key={index}>{index} {names}</h1>)
+    
+    return(
+        <div>
+            {nameList}
+        </div>
+    )
+}
 
 
 
