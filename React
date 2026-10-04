@@ -1,3 +1,5 @@
+“JavaScript can dynamically update a webpage by directly interacting with the DOM. React builds on JavaScript by using components and state. When state or props change, React re-renders the component and updates the required parts of the DOM without doing a full-page reload.”
+
 ---------------------------------------------------
 creating a componenet
 function Welcome(){
