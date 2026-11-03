@@ -135,3 +135,59 @@ console.log(it.next())
 console.log(it.next())
 console.log(it.next())
 console.log(it.next())
+
+class animal{
+    eat(){
+        console.log('animal eats')
+    }
+}
+class giraffe extends animal{
+    height(){
+        console.log('it is very hwight')
+    }
+}
+
+let obj=new giraffe()
+obj.height()
+obj.eat()
+
+
+
+class mammals{
+    constructor(name){
+        this.name=name
+    }
+        eat(){
+        console.log(`${this.name} eats`)
+    }
+}
+class woman extends mammals{
+    work(){
+        super.eat()
+        console.log("they give milk")
+    }
+}
+let obj = new woman("Alice")
+obj.work()
+console.log(obj.name) // Name stored by the constructor
+console.log(obj.constructor.name) // Class name
+
+
+class user{
+    constructor(name,email){
+        this.email=email
+        this.name=name
+    }
+    view_data(){
+        console.log(`data:`,DATA)
+    }
+}
+class admin extends user{
+    constructor(name,email){
+        super(name,email)
+    }
+    edit_data(){
+        data='fsdfgfsd'
+    }
+}
+ 
