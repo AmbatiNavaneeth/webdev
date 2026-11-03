@@ -1,3 +1,72 @@
+// Reverse a string.
+// let s="reverse"
+// let ans=""
+// for (let i = s.length - 1; i >= 0; i--){
+//     ans += s[i]
+// }
+// for (let i=0; i<=s.length-1;i++) {
+//     ans=s[i]+ans
+// }
+// console.log(ans)
+--------------------------------------------
+//Find the largest number in an array.
+let array=[5,8,2,5,9,11]
+let lar=-Infinity
+for (let i=0;i<array.length;i++){
+    if (array[i]>lar){
+        lar=array[i]
+    }
+}
+console.log(lar)
+
+--------------------------------------------
+Remove duplicate elements.
+
+let array = [6, 5, 5, 4, 4, 4, 2, 8, 10];
+const seen = new Set();
+const dup = new Set();
+
+for (const num of array) {
+    if (seen.has(num)) {
+        dup.add(num);
+    } else {
+        seen.add(num);
+    }
+}
+
+console.log([...dup]);
+--------------------------------------------
+//Count character occurrences.
+
+const s="hello"
+const counts={}
+for (let ch of s){
+    counts[ch]=((counts[ch] || 0)+1)
+}
+console.log(counts)
+------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let day=7
 switch (day){
     case 1:
