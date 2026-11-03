@@ -190,4 +190,112 @@ class admin extends user{
         data='fsdfgfsd'
     }
 }
- 
+
+
+console.log('openapp')
+setTimeout(()=>{
+    console.log('hii')
+},3000)
+console.log('byee')
+
+function orderfood(callback){
+    console.log('order food')
+    setTimeout(()=>{
+        console.log("food is prepared")
+        callback()},3000
+    )
+}
+function delivery(){
+    setTimeout(()=>{console.log("ordered delivery")},2000)
+}
+
+orderfood(delivery)
+
+
+const order= new Promise((resolve,reject)=>{
+    let success=true
+    if (success){
+        resolve("food is delivered")
+    }
+    else{
+        reject("unable to order")
+    }
+})
+
+order
+.then((result)=>{
+    console.log(result)
+})
+.catch((error)=>{
+    console.log(error)
+})
+
+
+function placeorder(){
+    return Promise.resolve("oder placed")
+}
+function orderpreparation(){
+    return Promise.resolve('preparing order')
+}
+function foodcomplete(){
+    return Promise.resolve('prepation complted')
+}
+function assigns_delivery_person(){
+    return Promise.resolve('assingned delivery person')
+}
+function order_delivered(){
+    return Promise.resolve("order delivered")
+}
+
+placeorder()
+    .then((result)=>{
+        console.log(result)
+        return orderpreparation()
+
+    })
+    .then((result)=>{
+        console.log(result)
+        return foodcomplete()
+    })
+    .then((result)=>{
+        console.log(result)
+        return assigns_delivery_person()
+    })
+    .then((result)=>{
+        console.log(result)
+        return order_delivered()
+    })
+   .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+const p1=Promise.resolve("a")
+const p2=Promise.resolve("b")
+const p3=Promise.resolve("c")
+
+Promise.all([p1,p2,p3])
+    .then((results)=>{
+        console.log(results)
+    })
+
+
+
+async function getuser(){
+    try{
+        const response=await fetch("https://learning.10000coders.in/classroom/studentProfile")
+        if (!response.ok){
+            throw new Error("unable to api fetching")
+        }
+        const data= await response.json()
+        console.log(data)
+    }
+    catch(error) {
+        console.log(error.message)
+    }
+}
+getuser()
+
